@@ -1,137 +1,274 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalpitha Srinivas | DevOps Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Kalpitha Srinivas | DevOps Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0a192f, #020c1b);
-            color: #e6edf3;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: rgba(10, 25, 47, 0.9);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
+<style>
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-            letter-spacing: 1px;
-        }
+body {
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#071426,#0b2545,#020c1b);
+    color:#e6edf3;
+}
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #c9d1d9;
-        }
+/* NAVBAR */
 
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 60px 20px;
-        }
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:rgba(0,0,0,0.3);
+backdrop-filter: blur(10px);
+position:sticky;
+top:0;
+}
 
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            width: 420px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: 0.3s;
-        }
+nav a{
+color:#f0c674;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-        }
+/* HERO */
 
-        h2 {
-            color: #ffd166;
-            margin-bottom: 10px;
-        }
+.hero{
+text-align:center;
+padding:80px 20px;
+}
 
-        h3 {
-            color: #ffd166;
-            margin-top: 20px;
-        }
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
 
-        p {
-            line-height: 1.6;
-            color: #c9d1d9;
-        }
+.hero p{
+font-size:18px;
+color:#9fb3c8;
+}
 
-        .skills {
-            margin-top: 10px;
-        }
+.links a{
+margin:10px;
+display:inline-block;
+padding:10px 20px;
+border-radius:6px;
+background:#f0c674;
+color:#000;
+text-decoration:none;
+font-weight:600;
+}
 
-        .skill {
-            display: inline-block;
-            background: rgba(255, 209, 102, 0.1);
-            border: 1px solid rgba(255, 209, 102, 0.4);
-            padding: 6px 12px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #ffd166;
-        }
+/* SECTIONS */
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #8b949e;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
+.section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
 
-    </style>
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+.section h2{
+color:#f0c674;
+margin-bottom:20px;
+}
+
+/* SKILLS */
+
+.skills span{
+display:inline-block;
+background:#112240;
+padding:8px 14px;
+margin:6px;
+border-radius:20px;
+font-size:14px;
+border:1px solid #f0c674;
+}
+
+/* PROJECT */
+
+.project{
+margin-bottom:20px;
+}
+
+.project a{
+color:#f0c674;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+color:#8892b0;
+}
+
+</style>
+
 </head>
 <body>
 
-<header>
-    <h1>Kalpitha Srinivas</h1>
-    <p>DevOps Engineer | Cloud | Kubernetes | CI/CD</p>
-</header>
+<nav>
+<div><b>Kalpitha</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<main>
-    <div class="card">
 
-        <h2>About Me</h2>
-        <p>
-            DevOps Engineer with hands-on experience building and deploying cloud-native applications.
-            Skilled in AWS, Docker, Kubernetes, and CI/CD automation. Passionate about building scalable,
-            reliable infrastructure and production-ready deployment pipelines.
-        </p>
+<section class="hero">
 
-        <h3>Skills</h3>
+<h1>Kalpitha Srinivas</h1>
 
-        <div class="skills">
-            <span class="skill">AWS</span>
-            <span class="skill">Docker</span>
-            <span class="skill">Kubernetes</span>
-            <span class="skill">GitHub Actions</span>
-            <span class="skill">Terraform</span>
-            <span class="skill">Linux</span>
-            <span class="skill">CI/CD</span>
-        </div>
+<p>
+DevOps Engineer | AWS | Kubernetes | CI/CD | GitOps
+</p>
 
-    </div>
-</main>
+<div class="links">
+
+<a href="https://github.com/kalpithasrinivas" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com/in/kalpitha-srinivas-740358220/" target="_blank">LinkedIn</a>
+
+<a href="mailto:kalpithaasrinivas@gmail.com">Email</a>
+
+</div>
+
+</section>
+
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+DevOps Engineer with experience supporting production cloud-native applications on AWS and Kubernetes.  
+Experienced in building CI/CD pipelines, containerization using Docker, and implementing GitOps using ArgoCD.  
+
+Experienced in migrating large-scale applications to Kubernetes and improving deployment reliability.
+
+</div>
+
+</section>
+
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="card skills">
+
+<span>AWS</span>
+<span>Kubernetes</span>
+<span>Docker</span>
+<span>Helm</span>
+<span>Terraform</span>
+<span>GitHub Actions</span>
+<span>GitLab CI/CD</span>
+<span>ArgoCD</span>
+<span>Linux</span>
+<span>NGINX</span>
+<span>SonarQube</span>
+<span>Vault</span>
+<span>Splunk</span>
+<span>Python</span>
+<span>SQL</span>
+
+</div>
+
+</section>
+
+
+
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="card project">
+
+<h3>DevOps GitOps Pipeline on AWS EKS</h3>
+
+<p>
+
+End-to-end CI/CD pipeline using GitHub Actions, Docker, Helm, ArgoCD and Kubernetes.
+
+</p>
+
+<a href="http://afe2e090621514598ba820ac6d642eab-46b83e444c55c30c.elb.us-east-1.amazonaws.com/" target="_blank">
+
+Live Demo
+
+</a>
+
+<br><br>
+
+<a href="https://github.com/kalpithasrinivas/go-web-app-devops" target="_blank">
+
+GitHub Repo
+
+</a>
+
+</div>
+
+
+
+<div class="card project">
+
+<h3>Kubernetes Migration Project – Dell</h3>
+
+<p>
+
+Migrated 25+ micro frontends from PCF to Kubernetes using Helm and GitLab CI/CD pipelines.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+Email: kalpithaasrinivas@gmail.com  
+<br>
+Phone: +91 8431973076  
+<br>
+Location: Bengaluru, India
+
+</div>
+
+</section>
+
+
 
 <footer>
-    © 2026 Kalpitha Srinivas
+
+© 2026 Kalpitha Srinivas
+
 </footer>
 
 </body>
 </html>
+```
