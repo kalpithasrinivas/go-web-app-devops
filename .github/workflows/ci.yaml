@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Go 1.22
         uses: actions/setup-go@v4
@@ -92,4 +94,5 @@ jobs:
           git config --global user.name "Kalpitha Srinivas"
           git add helm/go-web-app-chart/values.yaml
           git commit -m "Update image tag to ${{ github.run_id }}"
+
           git push
