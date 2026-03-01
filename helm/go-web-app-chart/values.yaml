@@ -15,7 +15,7 @@ ingress:
   className: nginx
   annotations: {}
   hosts:
-    - host: go-web-app.local
+    - host: ""
       paths:
         - path: /
           pathType: Prefix
