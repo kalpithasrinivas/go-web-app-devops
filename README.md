@@ -14,7 +14,14 @@ This project demonstrates a complete DevOps pipeline by containerizing a Go web 
 - NGINX Ingress Controller
 - DockerHub
 
----
+🐳 Containerization (Docker)
+
+• Created a Dockerfile to containerize the Go web application
+• Built Docker images locally and in CI pipeline
+• Pushed images to DockerHub registry
+• Used Docker images for Kubernetes deployments
+<img width="1900" height="851" alt="image" src="https://github.com/user-attachments/assets/0cff9077-a934-41b4-8267-7ffcdd3aed74" />
+
 
 ## 🔁 CI/CD Pipeline
 
