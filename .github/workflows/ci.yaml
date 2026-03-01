@@ -93,6 +93,7 @@ jobs:
           git config --global user.email "kalpithaasrinivas@gmail.com"
           git config --global user.name "Kalpitha Srinivas"
           git add helm/go-web-app-chart/values.yaml
-          git commit -m "Update image tag to ${{ github.run_id }}"
+          git commit -m "Update image tag to ${{ github.run_id }}" || echo "No changes"
 
           git push
+
