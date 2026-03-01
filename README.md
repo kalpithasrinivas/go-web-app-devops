@@ -1,20 +1,42 @@
-# Go Web Application
+# 🚀 End-to-End CI/CD & GitOps Deployment – Go Web App
 
-This is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
+This project demonstrates a complete DevOps pipeline by containerizing a Go web application and deploying it to AWS EKS using GitHub Actions, Docker, Helm, and Argo CD.
 
-## Running the server
+---
 
-To run the server, execute the following command:
+## ⚙️ Tech Stack
+- AWS EKS
+- Docker
+- Kubernetes
+- Helm
+- Argo CD
+- GitHub Actions
+- NGINX Ingress Controller
+- DockerHub
 
-```bash
-go run main.go
-```
+---
 
-The server will start on port 8080. You can access it by navigating to `http://localhost:8080/courses` in your web browser.
+## 🔁 CI/CD Pipeline
 
-## Looks like this
+CI (GitHub Actions):
+- Builds Go application
+- Builds Docker image
+- Pushes image to DockerHub
 
-![Website](static/images/golang-website.png)
+CD (Argo CD – GitOps):
+- Monitors Helm charts in GitHub
+- Automatically deploys updates to EKS cluster
 
-# trigger pipeline
-# trigger pipeline
+---
+
+## ☸️ Kubernetes Deployment
+Resources managed using Helm:
+- Deployment
+- Service
+- Ingress
+- AWS LoadBalancer
+
+---
+
+## 🌐 Live Application
+Accessible via AWS LoadBalancer URL:
