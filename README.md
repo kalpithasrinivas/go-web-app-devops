@@ -39,4 +39,5 @@ Resources managed using Helm:
 ---
 
 ## 🌐 Live Application
-Accessible via AWS LoadBalancer URL:
+Accessible via AWS LoadBalancer URL: http://afe2e090621514598ba820ac6d642eab-46b83e444c55c30c.elb.us-east-1.amazonaws.com/#about
+
