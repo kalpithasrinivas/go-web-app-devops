@@ -25,5 +25,5 @@ spec:
         image: kalpithasrinivas/go-web-app:{{ .Values.image.tag }}
         imagePullPolicy: Always
         ports:
-
         - containerPort: 8080
+
