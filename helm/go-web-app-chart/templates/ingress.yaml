@@ -9,7 +9,7 @@ spec:
   ingressClassName: nginx
 
   rules:
-  - host: go-web-app.local
+  - host:
     http:
       paths:
       - path: /
