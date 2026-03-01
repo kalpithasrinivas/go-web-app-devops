@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: kalpithasrinivas/go-web-app
   pullPolicy: IfNotPresent
-  tag: "22537880153"
+  tag: "22538244571"
 
 service:
   type: NodePort
